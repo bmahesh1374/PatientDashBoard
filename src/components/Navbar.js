@@ -17,23 +17,23 @@ function Navbar() {
         <img src={testLogo} alt="logo" className="logo" />
       </div>
       <div className="navbar-center">
-        <a href="#" className="nav-item">
+        <a href="/home" className="nav-item">
           <img src={overviewIcon} alt="overview" className="icon" />
           Overview
         </a>
-        <a href="#" className="nav-item active">
+        <a href="patients" className="nav-item active">
           <img src={patientsIcon} alt="patients" className="icon" />
           Patients
         </a>
-        <a href="#" className="nav-item">
+        <a href="schedule" className="nav-item">
           <img src={scheduleIcon} alt="schedule" className="icon" />
           Schedule
         </a>
-        <a href="#" className="nav-item">
+        <a href="messages" className="nav-item">
           <img src={messageIcon} alt="message" className="icon" />
           Message
         </a>
-        <a href="#" className="nav-item">
+        <a href="transactions" className="nav-item">
           <img src={transactionIcon} alt="transactions" className="icon" />
           Transactions
         </a>
