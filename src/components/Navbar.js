@@ -19,7 +19,7 @@ function Navbar() {
       <div className="navbar-center">
         <a href="/home" className="nav-item">
           <img src={overviewIcon} alt="overview" className="icon" />
-          Overview
+          Home
         </a>
         <a href="patients" className="nav-item active">
           <img src={patientsIcon} alt="patients" className="icon" />
