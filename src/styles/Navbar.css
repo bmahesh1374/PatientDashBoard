@@ -1,0 +1,99 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 28px;
+  background: white;
+  border-bottom: 1px solid rgb(209, 209, 222);
+  font-family: "Inter", sans-serif;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.logo {
+  height: 32px;
+}
+
+.navbar-center {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: rgb(91, 89, 89);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  opacity: 0.7;
+}
+
+.nav-item:hover {
+  background: rgb(213, 222, 223);
+}
+
+.nav-item.active {
+  background: rgb(81, 173, 180);
+  color: white;
+}
+
+.nav-item.active .icon {
+  filter: brightness(0) invert(1);
+  opacity: 1;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(47, 83, 98);
+  margin: 0;
+}
+
+.role {
+  font-size: 12px;
+  color: rgb(125, 133, 165);
+}
+
+.settings-icon,
+.more-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.settings-icon:hover,
+.more-icon:hover {
+  opacity: 1;
+}

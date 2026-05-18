@@ -1,0 +1,13 @@
+.app-layout {
+  display: flex;
+}
+
+.sidebar {
+  width: 300px;
+  height: calc(100vh - 70px);
+  top: 70px;
+}
+
+.dashboard-wrapper {
+  flex: 1;
+}

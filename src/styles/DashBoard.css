@@ -1,0 +1,377 @@
+.dashboard-wrapper {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: rgb(216, 222, 226);
+  min-height: calc(100vh - 70px);
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  align-items: flex-start;
+}
+
+.dashboard-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.dashboard-right {
+  width: 280px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(11, 105, 136);
+  margin: 0;
+}
+
+.bp-card {
+  background: rgb(237, 233, 241);
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  gap: 24px;
+}
+
+.bp-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.bp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.bp-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(6, 42, 60);
+}
+
+.bp-select {
+  border: none;
+  background: transparent;
+  font-size: 13px;
+  color: rgb(11, 47, 61);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  outline: none;
+}
+
+.chart-area {
+  height: 210px;
+  position: relative;
+}
+
+.chart-area canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.bp-right {
+  width: 160px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.bp-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bp-dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  margin-bottom: 2px;
+}
+
+.bp-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(10, 39, 48);
+}
+
+.bp-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #072635;
+  line-height: 1.1;
+}
+
+.bp-level {
+  font-size: 12px;
+  color: rgb(46, 56, 69);
+}
+
+.bp-divider {
+  border: none;
+  border-top: 1px solid rgb(156, 150, 149);
+  margin: 8px 0;
+}
+
+.vitals-row {
+  display: flex;
+  gap: 14px;
+}
+
+.vital-card {
+  flex: 1;
+  border-radius: 14px;
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.vital-icon {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 4px;
+}
+
+.vital-respiratory {
+  background: rgb(216, 241, 250);
+}
+.vital-temperature {
+  background: rgb(202, 223, 188);
+}
+.vital-heart {
+  background: rgb(249, 172, 172);
+}
+
+.vital-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(27, 58, 79);
+  margin: 0;
+}
+
+.vital-val {
+  font-size: 26px;
+  font-weight: 700;
+  color: rgb(24, 87, 90);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.vital-unit {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.vital-level {
+  font-size: 13px;
+  color: rgb(69, 91, 99);
+  margin: 0;
+}
+
+.diag-table-wrapper {
+  overflow-x: auto;
+  border-radius: 10px;
+  border: 1px solid rgb(228, 237, 244);
+}
+
+.diag-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  color: rgb(6, 25, 37);
+}
+
+.diag-table thead tr {
+  background: rgb(232, 237, 240)
+}
+
+.diag-table th {
+  text-align: left;
+  padding: 13px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(7, 19, 57);
+  white-space: nowrap;
+}
+
+.diag-table td {
+  padding: 14px 18px;
+  border-top: 1px solid rgb(237, 242, 245);
+  font-size: 14px;
+  color: rgb(13, 33, 57);
+  vertical-align: middle;
+}
+
+.diag-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.diag-table tbody tr:hover {
+  background: rgb(237, 242, 245);
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.patient-profile {
+  background: white;
+  border-radius: 16px;
+  padding: 28px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.patient-avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgb(232, 236, 239);
+}
+
+.patient-fullname {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  margin: 0;
+  text-align: center;
+}
+
+.info-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.info-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.info-label {
+  font-size: 12px;
+  color: rgb(73, 101, 116);
+  margin: 0;
+}
+
+.info-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  margin: 0;
+}
+
+.show-all-btn {
+  background: rgb(19, 134, 142);
+  color: white;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 4px;
+  font-family: inherit;
+  transition:
+    background 0.2s ease,
+    transform 0.1s ease;
+}
+
+.lab-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lab-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  margin: 0;
+}
+
+.lab-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.lab-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 8px;
+  transition: background 0.15s;
+  cursor: default;
+}
+
+.lab-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.lab-download {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border-radius: 6px;
+  transition:
+    color 0.15s,
+    background 0.15s;
+  flex-shrink: 0;
+}
